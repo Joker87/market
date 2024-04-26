@@ -1,0 +1,18 @@
+:host {
+  width: 240px;
+  //--mdc-elevated-card-container-color: white;
+
+  mat-card {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .image-wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    & img {
+      object-fit: contain;
+    }
+  }
+}

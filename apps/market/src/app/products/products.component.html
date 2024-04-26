@@ -1,0 +1,13 @@
+<mat-drawer-container class="container" autosize>
+  <button type="button" mat-button (click)="drawer.toggle()">
+    Toggle filters
+  </button>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-product-filters (userInput)="onUserInput($event)" (queryInput)="onQueryInput($event)" />
+  </mat-drawer>
+
+  <mat-spinner *ngIf="isPending$ | async; else listTpl"></mat-spinner>
+  <ng-template #listTpl>
+    <router-outlet></router-outlet>
+  </ng-template>
+</mat-drawer-container>

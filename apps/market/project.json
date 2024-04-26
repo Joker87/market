@@ -8,16 +8,27 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/market",
         "index": "apps/market/src/index.html",
         "browser": "apps/market/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/market/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/market/src/favicon.ico", "apps/market/src/assets"],
-        "styles": ["apps/market/src/styles.scss"],
+        "assets": [
+          "apps/market/src/favicon.ico",
+          "apps/market/src/assets",
+          "apps/market/src/manifest.webmanifest"
+        ],
+        "styles": [
+          "@angular/material/prebuilt-themes/pink-bluegrey.css",
+          "apps/market/src/styles.scss"
+        ],
         "scripts": [],
         "server": "apps/market/src/main.server.ts",
         "prerender": true,
@@ -39,7 +50,8 @@
               "maximumError": "4kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "serviceWorker": "apps/market/ngsw-config.json"
         },
         "development": {
           "optimization": false,
@@ -72,7 +84,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/market/jest.config.ts"
       }

@@ -1,0 +1,20 @@
+<mat-card *ngIf="product" class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ product.title }}</mat-card-title>
+  </mat-card-header>
+  <div class="image-wrap">
+    <img mat-card-image [ngSrc]="picturePath + product.pictureName" [alt]="product.title" fill>
+  </div>
+  <mat-card-content>
+    <p>
+      {{ product.description }}
+    </p>
+    <h3>{{ (product.price / 100) | currency }}</h3>
+    <mat-chip-set aria-label="Options">
+      <mat-chip>{{ product.year }}</mat-chip>
+      <mat-chip>{{ product.country.name }}</mat-chip>
+      <mat-chip>{{ product.type.name }}</mat-chip>
+    </mat-chip-set>
+  </mat-card-content>
+</mat-card>

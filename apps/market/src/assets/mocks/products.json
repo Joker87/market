@@ -1,0 +1,19 @@
+[
+  {
+    "uid": "chateau-belles-eaux-les-coteaux",
+    "title": "Château Belles Eaux Les Coteaux",
+    "country": {
+      "name": "France",
+      "codeA2": "fr"
+    },
+    "pictureName": "wine-chateau-belles-eaux-les-coteaux-51229249962318.webp",
+    "type": {
+      "uid": "white",
+      "name": "White"
+    },
+    "description": "From a family run winery, this Languedoc is a well-balanced stunner. Made in the Southern Rhône style from the classic blend of Syrah, Grenache and Mourvèdre grapes, it’s full of rich spices and fruit notes. An elegant wine at a great price.",
+    "year": "2022",
+    "rating": 4.57,
+    "price": 1295
+  }
+]
