@@ -12,7 +12,7 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/apps/market",
+        "outputPath": "preview/market",
         "index": "apps/market/src/index.html",
         "browser": "apps/market/src/main.ts",
         "polyfills": [
