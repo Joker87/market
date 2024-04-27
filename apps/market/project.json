@@ -12,7 +12,8 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "preview/market",
+        "baseHref": "/joker-87.github.io/",
+        "outputPath": "dist/apps/market",
         "index": "apps/market/src/index.html",
         "browser": "apps/market/src/main.ts",
         "polyfills": [
